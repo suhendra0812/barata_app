@@ -1,4 +1,4 @@
-# barata_app
+# BARATA App
 
 A new Flutter project.
 
