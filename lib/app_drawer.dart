@@ -1,4 +1,4 @@
-import 'package:barata_app/plan_page.dart';
+import 'package:barata_app/pages/plan_page.dart';
 import 'package:flutter/material.dart';
 
 class DrawerMenu extends StatelessWidget {
@@ -24,11 +24,10 @@ class DrawerMenu extends StatelessWidget {
             title: const Text('Planning'),
             onTap: () {
               Navigator.pop(context);
-              Navigator.push(
+              Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
-                      builder: (context) =>
-                          const PlanningPage(title: 'Planning')));
+                      builder: (context) => const PlanningPage()));
             },
           ),
           ListTile(
